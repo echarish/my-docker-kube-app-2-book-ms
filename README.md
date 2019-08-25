@@ -1,4 +1,5 @@
-
+### One way to create Docker image by Maven is by adding below plugins to maven pom
+```
 <properties>
    <docker.image.prefix>springio</docker.image.prefix>
 </properties>
@@ -38,8 +39,10 @@
         </execution>
     </executions>
 </plugin>
+```
 
-./mvnw install dockerfile:build
+### Run below command to create a image by maven
+* ./mvnw install dockerfile:build
 
 ### Docker commands ###
 * docker build -t echarish/ms-book-api . *
